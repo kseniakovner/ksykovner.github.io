@@ -1,0 +1,9 @@
+.tasks {
+    display: flex;
+
+    div {
+        border: 1px dashed grey;
+        padding: 5px;
+        margin: 5px;
+    }
+}
