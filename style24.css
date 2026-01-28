@@ -1,0 +1,23 @@
+/* Стилі для Етапу 24: Трансформації та Переходи */
+
+
+.hover-box {
+    width: 150px;
+    height: 150px;
+    margin: 50px auto;
+    background-color: #ffa500;
+    text-align: center;
+    line-height: 150px;
+    color: white;
+    cursor: pointer;
+   
+    /* Дія 1: Забезпечення плавності для всіх змін, що тривають 0.3 секунди */
+    transition: all 4s linear;
+}
+
+
+/* Дія 2: Зміна стану при наведенні */
+.hover-box:hover {
+    background-color: #ff4500; /* Зміна кольору */
+    transform: scaleX(0.5) rotate(180deg); /* Збільшення і легке обертання */
+}

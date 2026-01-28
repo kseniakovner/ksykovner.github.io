@@ -1,0 +1,24 @@
+/* Стилі для Етапу 22: CSS Grid */
+
+
+.grid-container {
+    /* Дія: Увімкнення Grid */
+    display: grid;
+    /* Створення двох колонок однакової ширини */
+    grid-template-columns: 100px 3fr;
+    /* Додавання простору між комірками */
+    gap: 25px;
+   
+    background-color: #e0f8ff;
+    padding: 20px;
+    border: 1px solid #00bfff;
+    margin-top: 20px;
+}
+
+
+.grid-item {
+    background-color: #00bfff;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>25. box-sizing</title>
+    <link rel="stylesheet" href="style25.css">
+    <link rel="icon" type="image/png" href="https://placehold.co/32x32/dc143c/ffffff/png?text=S">
+</head>
+<body>
+    <div>
+        <h1>Етап 25: box-sizing (Точність Розмірів)</h1>
+        <h2>ПРИНЦИП: Точність Макету</h2>
+        <p>box-sizing визначає, як браузер розраховує загальну ширину та висоту елемента. **Border-box** є найкращою практикою.</p>
+
+
+        <div class="box content-box">
+            Content-box (Ширина: 200px + padding + border = 250px)
+        </div>
+        <div class="box border-box">
+            Border-box (Ширина: 200px, включаючи padding та border)
+        </div>
+        <p>Зверніть увагу, що **Border-box** виглядає ідентично, незважаючи на додавання **padding** та **border**.</p>
+        <p><strong>Обов'язково:</strong> У сучасному веброзробленні майже завжди використовують **border-box**.</p>
+        <hr>
+    </div>
+</body>
+</html>

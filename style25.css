@@ -1,0 +1,30 @@
+/* Стилі для Етапу 25: box-sizing */
+
+
+.box {
+    width: 200px;
+    height: 100px;
+    padding: 5px;
+    border: 5px solid #dc143c;
+    margin: 20px 0;
+    text-align: center;
+    line-height: 60px;
+    color: white;
+    font-weight: bold;
+}
+
+
+.content-box {
+    /* Значення за замовчуванням: padding і border додаються до ширини/висоти */
+    box-sizing: content-box;
+    background-color: #ffb6c1;
+    border: 20px solid blue;
+}
+
+
+.border-box {
+    /* Дія: padding і border включаються у задану ширину/висоту (200px) */
+    box-sizing: border-box;
+    background-color: #dc143c;
+    border: 20px solid green;
+}

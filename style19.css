@@ -1,0 +1,14 @@
+/* Стилі для Етапу 19: Типографіка */
+.header-19 {
+    color: #9400d3;
+    font-family: Georgia, serif; /* Шрифт із зарубками */
+    text-transform: lowercase; /* Текст великими літерами */
+}
+.text-demo {
+    font-family: Arial, sans-serif; /* Шрифт без зарубок */
+    font-size: 24px;
+    font-weight: 700; /* Жирний шрифт */
+    line-height: 1.6; /* Міжрядковий інтервал (1.6x від font-size) */
+    color: #333;
+    text-align: justify; /* Вирівнювання по ширині */
+}

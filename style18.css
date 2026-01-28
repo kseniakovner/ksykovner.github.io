@@ -1,0 +1,15 @@
+/* Стилі для Етапу 18: Модель Коробки */
+.header-18 {
+    color: #1e90ff;
+}
+.box-model-demo {
+    /* 1. Внутрішній відступ (простір навколо вмісту) */
+    padding: 40px 10px;
+    /* 2. Рамка (видима межа коробки) */
+    border: 10px dashed red;
+    /* 3. Зовнішній відступ (простір навколо коробки) */
+    margin: 40px auto;
+    width: 300px;
+    background-color: #e6f0ff;
+    text-align: center;
+}

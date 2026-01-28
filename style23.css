@@ -1,0 +1,23 @@
+/* Стилі для Етапу 23: Візуальні Ефекти */
+
+
+.effect-box {
+    width: 300px;
+    height: 150px;
+    margin: 30px auto;
+   
+    /* Дія 1: Закруглення кутів та тінь */
+    border-radius: 5px;
+    box-shadow: 0 10px 0 #185a3a; /* X, Y, розмиття, колір */
+   
+    /* Дія 2: Налаштування фону */
+    background-image: url('https://placehold.co/300x150/3cb371/ffffff.png?text=BG');
+    background-size: cover; /* Розтягує зображення на всю область */
+    background-repeat: no-repeat; /* Запобігає повторенню */
+   
+    color: white;
+    text-align: center;
+    line-height: 150px;
+    font-weight: bold;
+    font-size: 20px;
+}
