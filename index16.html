@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>16. Блокові та Вбудовані Елементи</title>
+    <link rel="icon" type="image/png"
+        href="https://www.google.com/search?q=https://placehold.co/32x32/ff7f50/ffffff/png%3Ftext%3DB">
+    <style>
+        .block-element {
+            /* Блоковий: займає 100% ширини і починається з нового рядка */
+            border: 2px dashed #ff7f50;
+            background-color: #fff0e0;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        .inline-element {
+            /* Вбудований: займає лише місце контенту і знаходиться в тому самому рядку */
+            border: 2px solid #00bfff;
+            background-color: #e0f8ff;
+            padding: 2px 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>Етап 16: Блок vs Вбудований Елемент</h1>
+        <h2>ПРИНЦИП: Потік Документа (Document Flow)</h2>
+        <p>
+            Це ключова відмінність для розуміння CSS.
+        </p>
+
+        <h3>Приклад Блокового Елемента (&lt;div&gt;)</h3>
+        <div class="block-element">
+            Я — &lt;div&gt; (блоковий). Я займаю ВСЮ доступну ширину, а наступний контент піде з НОВОГО РЯДКА.
+        </div>
+
+        <h3>Приклад Вбудованих Елементів (&lt;span&gt;)</h3>
+        <p>
+            Текст іде тут, і ось
+            <span class="inline-element">це — &lt;span&gt; (вбудований)</span>. Бачите? Він знаходиться поруч,
+            <span class="inline-element">не розриваючи потік тексту</span>.
+        </p>
+
+        <p>
+            <strong>Обов'язково:</strong> Збережіть і подивіться на рамки. Червона рамка (блоковий) розтягнута на всю
+            ширину.
+        </p>
+        <hr>
+    </div>
+    <div>
+        <img src="flow.png" />
+    </div>
+
+</body>
+
+</html>

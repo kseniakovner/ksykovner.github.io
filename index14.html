@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>14. HTML-Таблиці (Стиль vs. Структура)</title>
+    <link rel="icon" type="image/png" href="https://placehold.co/32x32/32cd32/ffffff/png?text=T">
+    <style>
+        h1 {
+            color: #32cd32;
+        }
+
+        /* Стилі, що діють лише на першу таблицю */
+        #styled-table,
+        #styled-table th,
+        #styled-table td {
+            border: 1px solid #32cd32;
+            /* Рамка для всіх елементів таблиці */
+            border-collapse: collapse;
+            /* Згортання подвійних рамок в одну */
+        }
+
+        #styled-table {
+            width: 50%;
+            margin: 20px auto;
+        }
+
+        #styled-table th,
+        #styled-table td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        #styled-table th {
+            background-color: #e0fae0;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>Етап 14: Робота з Таблицями</h1>
+        <h2>ПРИНЦИП: Відображення Даних</h2>
+        <p>
+            Таблиці слід використовувати лише для відображення структурованих даних (звіти, розклади), а не для дизайну.
+        </p>
+
+        <h3>Таблиця 1: Стилізована (З рамками та кольором)</h3>
+        <p>Для цієї таблиці використано стилі з блоку <code>&lt;style&gt;</code>.</p>
+        <table id="styled-table">
+            <tr>
+                <th>Тег</th>
+                <th>Призначення</th>
+            </tr>
+            <tr>
+                <td>&lt;tr&gt;</td>
+                <td>Визначає рядок у таблиці</td>
+            </tr>
+            <tr>
+                <td>&lt;td&gt;</td>
+                <td>Визначає комірку даних</td>
+            </tr>
+        </table>
+
+        <p>
+            <strong>Обов'язково:</strong> Зверніть увагу, як стилі (рамки, колір фону) значно покращують читабельність
+            даних.
+        </p>
+
+        <hr>
+
+        <h3>Таблиця 2: Нестилізована (Чистий HTML)</h3>
+        <p>
+            Це та сама таблиця, але без застосування будь-яких CSS-стилів. Вона показує, як браузер відображає голий
+            HTML <code>&lt;table&gt;</code> за замовчуванням.
+        </p>
+        <table>
+            <tr>
+                <th>Тег</th>
+                <th>Призначення</th>
+            </tr>
+            <tr>
+                <td>&lt;tr&gt;</td>
+                <td>Визначає рядок у таблиці</td>
+            </tr>
+            <tr>
+                <td>&lt;td&gt;</td>
+                <td>Визначає комірку даних</td>
+            </tr>
+        </table>
+
+        <hr>
+    </div>
+
+    <div>
+        <table>
+            <tr>
+                <th>Категорія</th>
+                <th>Назва</th>
+                <th>Причина</th>
+            </tr>
+            <tr>
+                <td>Книга</td>
+                <td>Манга "Атака титанів"</td>
+                <td>Епічна історія про боротьбу залишків людства проти велетнів</td>
+            </tr>
+            <tr>
+                <td>Фільм</td>
+                <td>Бійцівський клуб</td>
+                <td>Історія про пошук власної ідентичності</td>
+            </tr>
+            <tr>
+                <td>Страва</td>
+                <td>Суші</td>
+                <td>Смачна японська страва із рисом та морепродуктами</td>
+            </tr>
+            <tr>
+                <td>Місто</td>
+                <td>Київ</td>
+                <td>Як тебе не любити Києве мій</td>
+            </tr>
+        </table>
+
+    </div>
+
+</body>
+
+</html>
